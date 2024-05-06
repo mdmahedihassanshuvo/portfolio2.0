@@ -1,0 +1,22 @@
+.banner {
+    /* min-height: calc(100vh - 78px); */
+    min-height: 100vh;
+    background-image: url(../../assets/banner/bg3.jpg),
+      url(../../assets/banner/reg.png);
+    background-blend-mode: multiply;
+  
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .person-container {
+    padding: 20px; /* Adjust as needed */
+    border-radius: 10px; /* Adjust as needed */
+  }
+  
+  .person-image-container {
+    margin-top: 20px; /* Adjust as needed */
+    overflow: hidden; /* Ensure the image doesn't overflow the rounded container */
+  }
+  

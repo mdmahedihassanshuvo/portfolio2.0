@@ -1,0 +1,5 @@
+.app {
+  width: 100%;
+  max-width: 1920px; /* Adjust max-width as needed */
+  margin: 0 auto; /* Center the container */
+}
