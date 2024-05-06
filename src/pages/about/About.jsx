@@ -1,17 +1,31 @@
 import person2 from "../../assets/Person/person2.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  AOS.init();
   return (
     <div className="bg-[#323946] px-5 py-5 md:px-[50px] md:py-[100px]">
       <div className="flex flex-col-reverse md:flex-row justify-center items-center">
-        <div className="w-full md:w-1/2 mb-5 md:mb-0">
+        <div
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-sine"
+          className="w-full md:w-1/2 mb-5 md:mb-0"
+        >
           <img
             className="w-full h-64 md:w-[70%] md:h-[457px] rounded-2xl"
             src={person2}
             alt="Person"
           />
         </div>
-        <div className="w-full md:w-1/2 text-white">
+        <div
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+          className="w-full md:w-1/2 text-white"
+        >
           <h3 className="text-3xl font-bold mb-3">
             <span className="text-blue-600">About</span> Me
           </h3>

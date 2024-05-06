@@ -11,8 +11,11 @@ import skill10 from "../../assets/skills/skill10.png";
 import skill11 from "../../assets/skills/skill11.png";
 import "./Expertise.css";
 import { useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Expertise = () => {
+  AOS.init();
   const [active, setActive] = useState(true);
   const [enable, setEnable] = useState(false);
 
@@ -29,7 +32,12 @@ const Expertise = () => {
         My <span className="text-blue-600">Skills</span>
       </h3>
       <hr className="border-2 mb-4" />
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-5 md:mt-8">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-anchor-placement="center-bottom"
+        className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-5 md:mt-8"
+      >
         {[
           { img: skill1, title: "HTML 5" },
           { img: skill2, title: "CSS 3" },

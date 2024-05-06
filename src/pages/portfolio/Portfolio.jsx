@@ -8,8 +8,11 @@ import { FaGithub } from "react-icons/fa6";
 import { LuLink } from "react-icons/lu";
 
 import "./Portfolio.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Portfolio = () => {
+  AOS.init();
   return (
     <div className="py-4 md:py-[40px] px-4 md:px-[50px] bg-[#323946]">
       <div className="flex justify-between items-center mb-4 md:mb-0">
@@ -39,7 +42,11 @@ const Portfolio = () => {
         </Link>
       </div>
 
-      <div className="grid grid-cols-1 gap-3 md:grid-cols-3 md:gap-10 md:mt-[100px]">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="3000"
+        className="grid grid-cols-1 gap-3 md:grid-cols-3 md:gap-10 md:mt-[100px]"
+      >
         {[
           {
             src: porject1,
