@@ -179,7 +179,7 @@ const InPageNavigation = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link target="black" to="#" className="btn">
+          <Link target="black" to="https://drive.google.com/file/d/1KyLDvZPMuFwnJiPmGhhE-If-TJJHr-4u/view?usp=drive_link" className="btn">
             Resume
           </Link>
         </div>
