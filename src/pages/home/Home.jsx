@@ -10,10 +10,10 @@ const Home = () => {
   return (
     <div className="banner md:px-[80px] p-[20px] w-full flex flex-col-reverse md:flex-row justify-center items-center">
       <div
-        data-aos="fade-right"
+        md:data-aos="fade-right"
         data-aos-offset="300"
         data-aos-duration="1000"
-        data-aos-easing="ease-in-sine"
+        md:data-aos-easing="ease-in-sine"
         className="text-white md:w-1/2 md:ps-3 md:space-y-4 space-y-2 text-center md:text-start"
       >
         <h4 className="md:text-xl text-sm font-medium">
